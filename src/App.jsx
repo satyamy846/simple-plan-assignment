@@ -27,7 +27,7 @@ function App() {
       {/* <Teachers/> */}
       <TeacherPromotion/>
       <BlogsPage/>
-      <Contact/>
+      {/* <Contact/> */}
       <Footer/>
     </>
   )

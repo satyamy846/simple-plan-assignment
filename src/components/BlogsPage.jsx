@@ -33,34 +33,36 @@ const blog_data = [
 export default function BlogsPage() {
   return (
     <>
-        <div className="flex flex-col gap-10 p-10 " id="blog">
-            <div className="blog-heading flex gap-4 items-baseline justify-center">
-                <h1 className="font-bold text-3xl text-primary">Our blogs</h1>
-                <a href="" className="underline text-orange">SHOW ALL</a>
+        <div className="flex flex-col gap-10 p-24" id="blog">
+            <div className="blog-heading flex gap-4 items-baseline">
+                <h1 className="font-pp_pangram_bold text-3xl text-primary">Our blogs</h1>
+                <a href="" className="underline font-nunito text-orange">SHOW ALL</a>
             </div>
             <div className="blog-cards-container flex gap-3 items-center justify-center flex-wrap lg:flex-nowrap">
                 {blog_data.map((item) => (
                     <>
-                        <div className="card flex flex-col gap-3 border border-lightgray shadow rounded w-[362px] p-3">
+                        <div className="card flex flex-col gap-3 border border-lightgray shadow rounded w-420px h-auto p-3">
                             <div className="card-image w-full flex flex-col overflow-hidden object-contain relative">
-                            <img src={item.image_link} alt="" className="w-full"/>
-                            <a href="" className="block absolute top-2 left-3 rounded px-3 py-1 font-semibold  bg-[#FFF0F4] text-[#E25753]">{item.header}</a>
+                            <img src={item.image_link} alt="blog-img" className="w-full"/>
+                            <div className="absolute top-2 left-3 rounded px-3 py-1 font-pp_pangram_semibold text-center bg-white text-orange">
+
+                            <a href="" className="w-full h-full">{item.header}</a>
+                            </div>
                             </div>
                             <div className="card-content">
-                                <h6 className="font-semibold text-lg">
+                                <h6 className="font-pp_pangram_semibold text-lg ">
                                     {item.title}
                                 </h6>
-                                <p className="font-light">{item.message}</p>
+                                <p className="font-light font-nunito">{item.message}</p>
                             </div>
                                 <hr className="text-lightgray"/>
-                            <div className="card-footer flex items-center justify-between">
+                            <div className="card-footer flex items-center justify-between font-nunito">
                                 <p className="text-primary font-semibold">{item.publish_name}</p>
                                 <div className="flex items-center gap-1">
-                                <FaRegComment/>
+                                <FaRegComment className="w-full h-full"/>
                                 <span>{item.comments_count}</span>
                                 </div>
                             </div>
-
                         </div>
                     </>
                 ))}

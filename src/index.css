@@ -1,3 +1,21 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+
+
+@font-face {
+    font-family: "PP Pangram Sans Rounded Bold";
+    src: url("../public/Fonts/PPPangramSansRounded-Bold.woff");
+}
+
+@font-face {
+    font-family: "PP Pangram Sans Rounded Semibold";
+    src: url("../public/Fonts/PPPangramSansRounded-Semibold.woff");
+}
+
+@font-face {
+    font-family: "PP Pangram Sans Rounded Medium";
+    src: url("../public/Fonts/PPPangramSansRounded-Medium.woff");
+}

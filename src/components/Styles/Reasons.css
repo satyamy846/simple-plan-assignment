@@ -1,0 +1,20 @@
+/* Desktop Screen */
+@media (min-width:1024px){
+    .reason-wrapper{
+        width: calc(33.33% - 12px);
+    }
+}
+
+/* Tablet Screen */
+@media (min-width: 768px) and (max-width: 1023px) {
+    .reason-wrapper{
+        width: calc(50% - 12px);
+    }
+}
+
+/* Mobile Screen */
+@media (min-width: 360px) and (max-width: 767px) {
+    .reason-wrapper{
+        width: calc(100% - 12px);
+    }
+}

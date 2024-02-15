@@ -25,7 +25,10 @@ export default {
       gray: '#4D4D4D'
     },
     fontFamily:{
-      'nunito': ['Nunito Sans']
+      nunito: ['Nunito Sans'],
+      pp_pangram_bold: ['PP Pangram Sans Rounded Bold'],
+      pp_pangram_semibold: ['PP Pangram Sans Rounded Semibold'],
+      pp_pangram_medium: ['PP Pangram Sans Rounded Medium']
     }
   },
   plugins: [],

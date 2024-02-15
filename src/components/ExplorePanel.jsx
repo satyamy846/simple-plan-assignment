@@ -27,21 +27,21 @@ const explore_data = [{
 export default function ExplorePanel() {
   return (
     <>
-        <div className="flex flex-col gap-8" id="explore ">
-            <div className="explore-heading flex justify-center items-center">
-                <h1 className='font-bold text-3xl text-primary'>Explore. Enroll. Have Fun. Repeat - here hobby meets happiness</h1>
+        <div className="flex flex-col gap-8 p-24 items-center text-center" id="explore ">
+            <div className="explore-heading flex justify-center items-center max-w-[670px]">
+                <h1 className='font-pp_pangram_bold text-3xl text-primary'>Explore. Enroll. Have Fun. Repeat - here hobby meets happiness</h1>
             </div>
             <div className="explore-items-container flex gap-4 justify-between items-center text-center flex-wrap lg:flex-nowrap">
             {
                 explore_data.map((item) => (
                     <>
                         <div className="explore-item flex flex-col items-center px-5 basis-full " key={item.heading}>
-                            <div className='h-120px object-cover overflow-hidden'>
+                            <div className='min-h-100px object-cover overflow-hidden'>
                             <img src={item.src} alt="explore-img" className='w-full h-full'/>
                             </div>
-                            <div className='content py-2'>
-                            <h4 className='font-semibold text-primary text-lg'>{item.heading}</h4>
-                            <p>{item.message}</p>
+                            <div className='content py-2 flex flex-col gap-3'>
+                            <h4 className='font-pp_pangram_semibold text-primary text-lg'>{item.heading}</h4>
+                            <p className='font-nunito'>{item.message}</p>
                             </div>
                         </div>
                     </>

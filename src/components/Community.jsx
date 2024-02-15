@@ -27,12 +27,12 @@ const community_card = [
 export default function Community() {
   return (
     <>
-        <div className='flex flex-col gap-10 px-10 py-10' id="community">
+        <div className='flex flex-col gap-5 p-24' id="community">
         <div className=''>
-        <h1 className='font-bold text-3xl text-primary '>Love from community</h1>
+        <h1 className='font-pp_pangram_bold text-3xl text-primary mb-10 '>Love from community</h1>
 
         </div>
-            <div className="card-wrapper flex gap-5 text-center justify-center flex-wrap lg:flex-nowrap">
+            <div className="card-wrapper flex gap-5 text-center justify-between flex-wrap lg:flex-nowrap">
                 {community_card.map((item) => (
                     <>
                         <div className={`card border rounded shadow border-[#D3DEEC] p-2 w-[361px] h-[318px] px-4 ${item.center_item ? 'bg-primary' : 'bg-[#fff]'}`}>
@@ -40,8 +40,8 @@ export default function Community() {
                             <img src={item.image_link} alt="" />
                             </div>
                             <div className="content flex flex-col gap-3">
-                            <h4 className={`font-semibold ${item.center_item ? 'text-[#fff] ': 'text-[#A7A7A7]'}`}>{item.name}</h4>
-                            <p className={item.center_item ? 'text-[#fff]' : 'text-black'}>{item.message}</p>
+                            <h4 className={`font-pp_pangram_semibold ${item.center_item ? 'text-[#fff] ': 'text-[#A7A7A7]'}`}>{item.name}</h4>
+                            <p className={`font-nunito ${item.center_item ? 'text-[#fff]' : 'text-black'}`}>{item.message}</p>
                             </div>
                         </div>
                     </>

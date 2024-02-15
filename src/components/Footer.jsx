@@ -31,15 +31,15 @@ export default function Footer() {
         <footer className='bg-lightblue mt-10' id='footer'>
             <div className="footer-container flex flex-col gap-5 py-5 px-20">
                 <div className="footer-heading-top flex justify-between gap-2 items-center flex-wrap lg:flex-nowrap">
-                    <div className="contents-wrapper flex  gap-10 flex-1">
+                    <div className="contents-wrapper flex gap-10 flex-1">
                         {content_data.map((data) => (
                             <>
                                 <div className="flex flex-col gap-1 flex-1">
-                                <h2 className="font-bold text-primary text-lg">{data.title}</h2>
+                                <h2 className="font-pp_pangram_bold text-primary text-lg pb-1">{data.title}</h2>
                                 {
                                     data.items.map((item) => (
                                         <>
-                                            <p className="text-simpleplan_lightblue font-medium">{item}</p>
+                                            <p className="text-simpleplan_lightblue font-medium font-nunito">{item}</p>
                                         </>
                                     ))
                                 }
@@ -47,14 +47,14 @@ export default function Footer() {
                             </>
                         ))}
                     </div>
-                    <div className="image-wrapper object-cover overflow-hidden rounded">
+                    <div className="image-wrapper object-cover overflow-hidden rounded font-nunito">
                         <img src={SellYourProductImg} alt="sell-your-product-img" className="w-full h-full"/>
                         <p className="bg-white text-primary text-center py-1 px-3 font-semibold">SELL YOUR PRODUCTS WITH US</p>
                     </div>
                 </div>
                 <hr className="bg-lightblue"/>
                 {/* Copyright */}
-                <div className="footer-bottom flex justify-between items-center text-simpleplan_lightblue">
+                <div className="footer-bottom flex justify-between items-center text-simpleplan_lightblue font-nunito">
                     
                     <p className="font-light ">© Project 2021. All rights reserved.</p>
                         <p>Made with ❤ by SimplePlan</p>

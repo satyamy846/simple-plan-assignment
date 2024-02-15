@@ -5,6 +5,8 @@ import Img4 from '../assets/Reasons/4.png';
 import Img5 from '../assets/Reasons/5.png';
 import Img6 from '../assets/Reasons/6.png';
 
+import './Styles/Reasons.css';
+
 const reason_data = [
 {
     id:1,
@@ -40,21 +42,21 @@ const reason_data = [
 export default function Reasons() {
   return (
     <>
-        <div className='p-5' id="reasons">
-            <h2 className='font-bold text-3xl text-primary'>
+        <div className='p-24 flex flex-col gap-10' id="reasons">
+            <h2 className='font-pp_pangram_bold text-3xl text-primary'>
             Six reasons to choose our class
             </h2>
 
-            <div className="reason-container flex items-center gap-3 flex-wrap lg:flex-nowrap">
+            <div className="reason-container flex items-center gap-3 flex-wrap">
                 {reason_data.map((item) => (
                     <>
-                        <div className="reason-wrapper flex flex-col justify-between gap-2 w-[300px] h-[160px]" key={item.id}>
-                            <div className='w-[90px] h-[90px] object-cover overflow-hidden'>
+                        <div className="reason-wrapper flex flex-col gap-2 max-w-[300px]" key={item.id}>
+                            <div className='max-w-[90px] max-h-[90px] object-cover overflow-hidden'>
 
                                 <img src={item.image} alt="reason-img" className='w-full h-full'/>
                             </div>
                             <div>
-                            <p className='font-semibold'>{item.message}</p>
+                            <p className='font-pp_pangram_semibold'>{item.message}</p>
                             </div>
                         </div>
                     </>
