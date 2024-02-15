@@ -28,8 +28,8 @@ const content_data = [
 export default function Footer() {
   return (
     <>
-        <footer className='bg-lightblue mt-10' id='footer'>
-            <div className="footer-container flex flex-col gap-5 py-5 px-20">
+        <footer className='bg-lightblue mt-10 px-24 py-10' id='footer'>
+            <div className="footer-container flex flex-col gap-5 ">
                 <div className="footer-heading-top flex justify-between gap-2 items-center flex-wrap lg:flex-nowrap">
                     <div className="contents-wrapper flex gap-10 flex-1">
                         {content_data.map((data) => (

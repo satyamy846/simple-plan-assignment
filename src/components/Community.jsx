@@ -35,7 +35,7 @@ export default function Community() {
             <div className="card-wrapper flex gap-5 text-center justify-between flex-wrap lg:flex-nowrap">
                 {community_card.map((item) => (
                     <>
-                        <div className={`card border rounded shadow border-[#D3DEEC] p-2 w-[361px] h-[318px] px-4 ${item.center_item ? 'bg-primary' : 'bg-[#fff]'}`}>
+                        <div className={`card border rounded shadow border-[#D3DEEC] p-2 w-[420px] h-[340px] px-4 ${item.center_item ? 'bg-primary' : 'bg-[#fff]'}`}>
                             <div className='image flex justify-center items-center'>
                             <img src={item.image_link} alt="" />
                             </div>
