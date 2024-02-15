@@ -1,6 +1,6 @@
-import VectorImg from '../assets/Mask Group.svg';
-import HeartImage from '../assets/pngwing 1.svg';
-import HeartImage2 from '../assets/Subtract.png';
+import VectorImg from '../assets/HeroSections/Mask Group.svg';
+import HeartImage from '../assets/HeroSections/pngwing 1.png';
+import HeartImage2 from '../assets/HeroSections/Subtract.png';
 import { FaRegArrowAltCircleRight } from "react-icons/fa";
 // align-items: center;
 // justify-content: center;

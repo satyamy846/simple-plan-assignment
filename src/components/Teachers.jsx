@@ -6,6 +6,8 @@ export default function Teachers() {
         <div id="teachers">
             <h1>Meet our teachers</h1>
             {/* Carousel needs to be added */}
+
+            
         </div>
     </>
   )

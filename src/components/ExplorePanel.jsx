@@ -1,7 +1,7 @@
-import Artboard from '../assets/Artboard-27.png';
-import PaymentVector from '../assets/payment-vector.png';
-import SkilledVector from '../assets/skilled-vector.png';
-import Studying from '../assets/Studying.png';
+import Artboard from '../assets/Explores/Artboard-27.png';
+import PaymentVector from '../assets/Explores/payment-vector.png';
+import SkilledVector from '../assets/Explores/skilled-vector.png';
+import Studying from '../assets/Explores/Studying.png';
 
 const explore_data = [{
     src: Artboard,
@@ -31,14 +31,18 @@ export default function ExplorePanel() {
             <div className="explore-heading flex justify-center items-center">
                 <h1 className='font-bold text-3xl text-primary'>Explore. Enroll. Have Fun. Repeat - here hobby meets happiness</h1>
             </div>
-            <div className="explore-items-container flex gap-4 justify-between items-center text-center">
+            <div className="explore-items-container flex gap-4 justify-between items-center text-center flex-wrap lg:flex-nowrap">
             {
                 explore_data.map((item) => (
                     <>
-                        <div className="explore-item flex flex-col justify-center items-center px-5" key={item.heading}>
-                            <img src={item.src} alt="explore-img" />
+                        <div className="explore-item flex flex-col items-center px-5 basis-full " key={item.heading}>
+                            <div className='h-120px object-cover overflow-hidden'>
+                            <img src={item.src} alt="explore-img" className='w-full h-full'/>
+                            </div>
+                            <div className='content py-2'>
                             <h4 className='font-semibold text-primary text-lg'>{item.heading}</h4>
                             <p>{item.message}</p>
+                            </div>
                         </div>
                     </>
                 ))

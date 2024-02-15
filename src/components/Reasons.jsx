@@ -40,17 +40,17 @@ const reason_data = [
 export default function Reasons() {
   return (
     <>
-        <div id="reasons">
-            <h2>
+        <div className='p-5' id="reasons">
+            <h2 className='font-bold text-3xl text-primary'>
             Six reasons to choose our class
             </h2>
 
-            <div className="reason-container">
+            <div className="reason-container flex items-center">
                 {reason_data.map((item) => (
                     <>
-                        <div className="reason-wrapper" key={item.id}>
-                            <img src={item.image} alt="reason-img" />
-                            <p>{item.message}</p>
+                        <div className="reason-wrapper w-full lg:w-3/12 flex flex-col gap-3" key={item.id}>
+                            <img src={item.image} alt="reason-img" className='w-[120px] h-[120px]'/>
+                            <p className='font-semibold'>{item.message}</p>
                         </div>
                     </>
                 ))}
