@@ -10,9 +10,9 @@ export default function Navbar() {
 
               </div>
               <div className='flex justify-center items-center gap-5'>
-                  <h3 className='text-primary'>TEACH</h3>
-                  <button className="bg-opacity-0 border rounded-3xl py-2 px-4 font-bold text-primary">LOGIN</button>
-                  <button className="bg-primary rounded-3xl py-2 px-4 font-bold text-[">SIGNUP</button>
+                  <h3 className='text-primary font-bold'>TEACH</h3>
+                  <button className="bg-opacity-0 border rounded-full py-2 px-4 font-bold text-primary">LOGIN</button>
+                  <button className="bg-primary rounded-full py-2 px-4 font-bold text-white">SIGNUP</button>
               </div>
           </nav>
     </>

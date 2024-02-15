@@ -28,8 +28,11 @@ export default function Community() {
   return (
     <>
         <div className='flex flex-col gap-10 px-10 py-10' id="community">
-            <h1 className='font-bold text-3xl text-primary'>Love from community</h1>
-            <div className="card-wrapper flex gap-5 text-center justify-between flex-wrap lg:flex-nowrap">
+        <div className=''>
+        <h1 className='font-bold text-3xl text-primary '>Love from community</h1>
+
+        </div>
+            <div className="card-wrapper flex gap-5 text-center justify-center flex-wrap lg:flex-nowrap">
                 {community_card.map((item) => (
                     <>
                         <div className={`card border rounded shadow border-[#D3DEEC] p-2 w-[361px] h-[318px] px-4 ${item.center_item ? 'bg-primary' : 'bg-[#fff]'}`}>

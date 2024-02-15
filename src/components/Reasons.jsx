@@ -45,12 +45,17 @@ export default function Reasons() {
             Six reasons to choose our class
             </h2>
 
-            <div className="reason-container flex items-center">
+            <div className="reason-container flex items-center gap-3 flex-wrap lg:flex-nowrap">
                 {reason_data.map((item) => (
                     <>
-                        <div className="reason-wrapper w-full lg:w-3/12 flex flex-col gap-3" key={item.id}>
-                            <img src={item.image} alt="reason-img" className='w-[120px] h-[120px]'/>
+                        <div className="reason-wrapper flex flex-col justify-between gap-2 w-[300px] h-[160px]" key={item.id}>
+                            <div className='w-[90px] h-[90px] object-cover overflow-hidden'>
+
+                                <img src={item.image} alt="reason-img" className='w-full h-full'/>
+                            </div>
+                            <div>
                             <p className='font-semibold'>{item.message}</p>
+                            </div>
                         </div>
                     </>
                 ))}

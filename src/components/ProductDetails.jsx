@@ -54,11 +54,11 @@ export default function ProductDetails() {
                     <h3 className='font-bold text-3xl text-primary'>Discover classes</h3>
                     <a href="" className='underline text-[#E25753]'>SHOW ALL</a>
                 </div>
-                <div className="heading-right flex">
-                    <p>Show prices in:</p>
+                <div className="heading-right flex gap-4 items-center">
+                    <p className='text-gray font-light'>Show prices in:</p>
                     <div className="btn-wrap">
-                        <button>NOK</button>
-                        <button>INR</button>
+                        <button className='bg-primary text-white rounded-l-full py-2 px-5'>NOK</button>
+                        <button className='bg-lightblue text-black rounded-r-full py-2 px-5'>INR</button>
                     </div>
                 </div>
             </div>

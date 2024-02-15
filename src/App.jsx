@@ -10,6 +10,7 @@ import TeacherPromotion from './components/TeacherPromotion';
 import BlogsPage from './components/BlogsPage';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
+import Teachers from './components/Teachers';
 
 function App() {
 
@@ -23,6 +24,7 @@ function App() {
       <Reasons/>
       <Community/>
       {/* Teachers Carousel */}
+      {/* <Teachers/> */}
       <TeacherPromotion/>
       <BlogsPage/>
       <Contact/>

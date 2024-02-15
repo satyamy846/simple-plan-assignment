@@ -21,7 +21,8 @@ export default {
       black: '#000',
       orange: '#E25753',
       lightblue: '#F4F7FA',
-      simpleplan_lightblue: '#51557D'
+      simpleplan_lightblue: '#51557D',
+      gray: '#4D4D4D'
     },
     fontFamily:{
       'nunito': ['Nunito Sans']

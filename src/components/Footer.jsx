@@ -52,7 +52,7 @@ export default function Footer() {
                         <p className="bg-white text-primary text-center py-1 px-3 font-semibold">SELL YOUR PRODUCTS WITH US</p>
                     </div>
                 </div>
-                <hr />
+                <hr className="bg-lightblue"/>
                 {/* Copyright */}
                 <div className="footer-bottom flex justify-between items-center text-simpleplan_lightblue">
                     
