@@ -17,7 +17,7 @@ const dropdown_content = [
 
 
 export default function Navbar() {
-  const [showDropdown, setShowDropdown] = useState(true);
+  const [showDropdown, setShowDropdown] = useState(false);
   const [showNavMenu, setShowNavMenu] = useState(false);
 
   return (
@@ -38,8 +38,8 @@ export default function Navbar() {
                         font-bold leading-none 
                         cursor-pointer'
       
-            // onMouseEnter={() => setShowDropdown(!showDropdown)}
-            // onMouseLeave={() => setShowDropdown(!showDropdown)}
+            onMouseEnter={() => setShowDropdown(!showDropdown)}
+            onMouseLeave={() => setShowDropdown(!showDropdown)}
           >CATEGORIES <RiArrowDropDownLine /></h4>
 
         </div>
@@ -75,7 +75,7 @@ export default function Navbar() {
       {
         showDropdown && (
           <>
-            <div className="dropdown-section flex justify-between px-[144px] py-3 bg-lightblue absolute h-[55vh] w-full flex-wrap z-90">
+            <div className="dropdown-section flex justify-between px-[144px] py-3 bg-lightblue absolute  w-full flex-wrap z-90">
               <div className="dropdown-section__left flex gap-10">
                 {dropdown_content.map((item => (
                   <>
