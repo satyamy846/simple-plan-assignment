@@ -1,6 +1,6 @@
 // import Slider from "react-slick";
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
+// import "slick-carousel/slick/slick.css";
+// import "slick-carousel/slick/slick-theme.css";
 import Teacher1 from '../assets/Teachers/Teacher1.png';
 import Teacher2 from '../assets/Teachers/Teacher2.png';
 import Teacher3 from '../assets/Teachers/Teacher3.png';

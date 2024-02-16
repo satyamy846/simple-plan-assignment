@@ -22,7 +22,7 @@ export default function Navbar() {
 
   return (
     <>
-      {/* ------------------- Navbar ------------------- */}
+      {/* ------------------- Navbar start ------------------- */}
       <nav className={`flex items-center 
                       justify-between w-full h-16 
                       px-10 md:px-12 py-2 lg:px-36  
@@ -49,7 +49,9 @@ export default function Navbar() {
           <button className="bg-opacity-0 border rounded-full py-2 px-4 font-bold text-primary">LOGIN</button>
           <button className="bg-primary rounded-full py-2 px-4 font-bold text-white">SIGNUP</button>
         </div>
-        {/* ----------------Hambugger Menu ------------ */}
+        {/* ------------------- Navbar end ------------------- */}
+
+        {/* ----------------Hambugger Menu Button------------ */}
         <div className="flex justify-end md:hidden">
           <button className="text-3xl " onClick={() => setShowNavMenu(!showNavMenu)} >
             <IoMdMenu />
@@ -75,7 +77,7 @@ export default function Navbar() {
       {
         showDropdown && (
           <>
-            <div className="dropdown-section flex justify-between px-[144px] py-3 bg-lightblue absolute  w-full flex-wrap z-90">
+            <div className="dropdown-section flex justify-center md:justify-around lg:justify-between px-[50px] lg:px-[144px] py-3 bg-lightblue absolute w-full flex-wrap z-90 h-[100vh] lg:h-[70vh] z-[2]">
               <div className="dropdown-section__left flex gap-10">
                 {dropdown_content.map((item => (
                   <>

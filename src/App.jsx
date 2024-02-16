@@ -12,26 +12,27 @@ import Contact from './components/Contact';
 import Footer from './components/Footer';
 import Teachers from './components/Teachers';
 import { IoMdChatbubbles } from "react-icons/io";
+
 function App() {
 
   return (
     <>
       <div className='relative'>
-      <Navbar/>
-      <HeroSection/>
-      <ExplorePanel/>
-      <ProductDetails/>
-      <Category/>
-      <Reasons/>
-      <Community/>
-      <Teachers/>
-      <TeacherPromotion/>
-      <BlogsPage/>
-      <Contact/>
-      <Footer/>
-      <div className='fixed top-96 right-10 bg-primary text-white rounded-full p-3 z-10'>
-      <IoMdChatbubbles/>
-      </div>
+        <Navbar/>
+        <HeroSection/>
+        <ExplorePanel/>
+        <ProductDetails/>
+        <Category/>
+        <Reasons/>
+        <Community/>
+        <Teachers/>
+        <TeacherPromotion/>
+        <BlogsPage/>
+        <Contact/>
+        <Footer/>
+        <div className='fixed bottom-4 right-10 bg-primary text-white rounded-full p-3 z-10 cursor-pointer'>
+          <IoMdChatbubbles/>
+        </div>
       </div>
     </>
   )
