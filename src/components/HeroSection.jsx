@@ -1,6 +1,7 @@
 import VectorImg from '../assets/HeroSections/Mask Group.png';
 import HeartImage from '../assets/HeroSections/pngwing 1.png';
 import HeartImage2 from '../assets/HeroSections/Subtract.png';
+
 import { FaRegArrowAltCircleRight } from "react-icons/fa";
 // align-items: center;
 // justify-content: center;
@@ -9,9 +10,9 @@ import { FaRegArrowAltCircleRight } from "react-icons/fa";
 export default function HeroSection() {
   return (
     <>
-        <div className='flex items-center justify-center gap-10 text-primary p-5 md:p-10 lg:p-24 flex-wrap'>
+        <div className='hero-section-main-container flex items-center justify-center gap-10 text-primary p-5 md:p-10 lg:p-24 flex-wrap'>
             {/* Hero Section details  */}
-            <div className='pl-8 flex flex-col gap-6 max-w-[400px]'>
+            <div className='hero-section-content-wrapper pl-8 flex flex-col gap-6 max-w-[400px]'>
                 <div className='flex items-center font-pp_pangram_bold text-xl flex-wrap'>
                     <h3>Hobbies</h3>
                     <img src={HeartImage} alt="heart-img" className='w-[56px] h-[56px]'/>
@@ -31,10 +32,13 @@ export default function HeroSection() {
                 </div>
             </div>
             {/* SVG content  */}
-            <div className=' lg:max-w-[690px] object-cover overflow-hidden'>
+            <div className='hero-section-svg-wrapper lg:max-w-[690px] object-cover overflow-hidden'>
                 <img src={VectorImg} alt="vector-img" className='w-full h-full'/>
             </div>
+
+            
         </div>
+
     </>
   )
 }

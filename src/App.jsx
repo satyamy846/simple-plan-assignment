@@ -11,11 +11,12 @@ import BlogsPage from './components/BlogsPage';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
 import Teachers from './components/Teachers';
-
+import { IoMdChatbubbles } from "react-icons/io";
 function App() {
 
   return (
     <>
+      <div className='relative'>
       <Navbar/>
       <HeroSection/>
       <ExplorePanel/>
@@ -28,6 +29,10 @@ function App() {
       <BlogsPage/>
       <Contact/>
       <Footer/>
+      <div className='fixed top-96 right-10 bg-primary text-white rounded-full p-3 z-10'>
+      <IoMdChatbubbles/>
+      </div>
+      </div>
     </>
   )
 }

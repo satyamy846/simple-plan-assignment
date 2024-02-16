@@ -3,6 +3,7 @@ import Vector1 from '../assets/Dropdwown/Vector-1.png';
 import Vector2 from '../assets/Dropdwown/Vector.png';
 import { useState } from "react";
 import { IoMdMenu } from "react-icons/io";
+
 const dropdown_content = [
   {
     id: 0,
@@ -16,12 +17,12 @@ const dropdown_content = [
 
 
 export default function Navbar() {
-  const [showDropdown, setShowDropdown] = useState(false);
+  const [showDropdown, setShowDropdown] = useState(true);
   const [showNavMenu, setShowNavMenu] = useState(false);
 
   return (
     <>
-
+      {/* ------------------- Navbar ------------------- */}
       <nav className={`flex items-center 
                       justify-between w-full h-16 
                       px-10 md:px-12 py-2 lg:px-36  
@@ -36,7 +37,9 @@ export default function Navbar() {
                         justify-center text-sm 
                         font-bold leading-none 
                         cursor-pointer'
-            onClick={() => setShowDropdown(!showDropdown)}
+      
+            // onMouseEnter={() => setShowDropdown(!showDropdown)}
+            // onMouseLeave={() => setShowDropdown(!showDropdown)}
           >CATEGORIES <RiArrowDropDownLine /></h4>
 
         </div>
@@ -46,37 +49,33 @@ export default function Navbar() {
           <button className="bg-opacity-0 border rounded-full py-2 px-4 font-bold text-primary">LOGIN</button>
           <button className="bg-primary rounded-full py-2 px-4 font-bold text-white">SIGNUP</button>
         </div>
-
+        {/* ----------------Hambugger Menu ------------ */}
         <div className="flex justify-end md:hidden">
-          <button className="text-3xl " onClick={() => setShowNavMenu(!showNavMenu)}>
+          <button className="text-3xl " onClick={() => setShowNavMenu(!showNavMenu)} >
             <IoMdMenu />
           </button>
           
         </div>
       </nav>
-      
-        {showNavMenu && (
-            <>
-              <div className="w-full h-40 bg-primary flex flex-col items-center justify-center">
-                  <ul className="text-white font-nunito flex flex-col gap-5 items-center justify-center">
-                    <li><p>TEACH</p></li>
-                    <li><p>LOGIN</p></li>
-                    <li><p>SIGNUP</p></li>
-                  </ul>
-              </div>
-            </>
-          )}
-
-
-
-
+      {/* --------------- Hambugger Menu dropdown ---------- */}
+      {showNavMenu && (
+          <>
+            <div className="hambugger-menu__dropdown w-full h-40 bg-primary flex flex-col items-center justify-center ">
+                <ul className="text-white font-nunito flex flex-col gap-5 items-center justify-center">
+                  <li><p>TEACH</p></li>
+                  <li><p>LOGIN</p></li>
+                  <li><p>SIGNUP</p></li>
+                </ul>
+            </div>
+          </>
+        )}
 
 
       {/* ----------------------Header Dropdown (Category)----------------- */}
       {
         showDropdown && (
           <>
-            <div className="dropdown-section flex justify-between px-[144px] py-3 bg-lightblue absolute h-[380px] w-full">
+            <div className="dropdown-section flex justify-between px-[144px] py-3 bg-lightblue absolute h-[55vh] w-full flex-wrap z-90">
               <div className="dropdown-section__left flex gap-10">
                 {dropdown_content.map((item => (
                   <>
@@ -88,7 +87,6 @@ export default function Navbar() {
                           </ul>
                         </>
                       ))
-
                       }
                     </div>
                   </>

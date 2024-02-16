@@ -22,7 +22,8 @@ export default {
       lightblue: '#F4F7FA',
       simpleplan_lightblue: '#51557D',
       gray: '#4D4D4D',
-      lightpink: '#FF006D'
+      lightpink: '#FF006D',
+      borderlightblue: '#D3DEEC'
     },
     fontFamily:{
       nunito: ['Nunito Sans'],

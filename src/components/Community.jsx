@@ -32,16 +32,16 @@ export default function Community() {
                 <h1 className='font-pp_pangram_bold text-3xl text-primary mb-10 '>Love from community</h1>
 
             </div>
-            <div className="card-wrapper flex gap-5 text-center justify-center items-center lg:justify-between flex-wrap lg:flex-nowrap ">
+            <div className="card-wrapper flex gap-5 text-center flex-wrap lg:flex-nowrap ">
                 {community_card.map((item) => (
                     <>
-                        <div className={`card border rounded shadow border-[#D3DEEC] p-10 lg:p-2 max-w-[500px] lg:w-[420px] lg:h-[340px] px-4 ${item.center_item ? 'bg-primary' : 'bg-[#fff]'}`}>
+                        <div className={`card border rounded shadow border-borderlightblue p-10 lg:p-2 w-full  px-4 ${item.center_item ? 'bg-primary' : 'bg-white'}`}>
                             <div className='image flex justify-center items-center'>
                             <img src={item.image_link} alt="" />
                             </div>
                             <div className="content flex flex-col gap-3">
-                            <h4 className={`font-pp_pangram_semibold ${item.center_item ? 'text-[#fff] ': 'text-[#A7A7A7]'}`}>{item.name}</h4>
-                            <p className={`font-nunito ${item.center_item ? 'text-[#fff]' : 'text-black'}`}>{item.message}</p>
+                            <h4 className={`font-pp_pangram_semibold ${item.center_item ? 'text-white ': 'text-[#A7A7A7]'}`}>{item.name}</h4>
+                            <p className={`font-nunito ${item.center_item ? 'text-white' : 'text-black'}`}>{item.message}</p>
                             </div>
                         </div>
                     </>

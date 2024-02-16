@@ -45,13 +45,13 @@ export default function Category() {
     <>
         <div className='p-5 md:p-10 lg:p-24 flex flex-col items-center lg:items-start' id="category">
             <h1 className='font-pp_pangram_bold text-3xl text-primary pl-5 mb-10'>Browse by category</h1>
-            <div className="card-container flex gap-4 flex-wrap text-center">
+            <div className="card-container flex gap-4 flex-wrap text-center w-full">
                 {
                     card_data.map((item) => (
                         <>
                             <div className="card flex flex-col responsive-img-wrapper ">
                                 
-                                <img src={item.src} alt="category-img" className='max-w-full h-auto transition hover:scale-110 ease-in-out' />
+                                <img src={item.src} alt="category-img" className='max-w-full h-auto transition hover:scale-110 duration-300 ease-in-out' />
                                 
                                 <h4 className='font-pp_pangram_semibold mb-2'>{item.category_name}</h4>
                                 

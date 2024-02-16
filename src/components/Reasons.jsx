@@ -47,11 +47,11 @@ export default function Reasons() {
             Six reasons to choose our class
             </h2>
 
-            <div className="reason-container flex items-center gap-3 flex-wrap  ">
+            <div className="reason-container flex items-center gap-3 flex-wrap ">
                 {reason_data.map((item) => (
                     <>
-                        <div className="reason-wrapper flex flex-col gap-2 max-w-[300px]" key={item.id}>
-                            <div className='max-w-[90px] max-h-[90px] object-cover overflow-hidden'>
+                        <div className="reason-wrapper flex flex-col gap-2  " key={item.id}>
+                            <div className='max-w-[90px] max-h-[90px] object-contain overflow-hidden'>
 
                                 <img src={item.image} alt="reason-img" className='w-full h-full'/>
                             </div>
