@@ -6,7 +6,7 @@ import TeacherVector from '../assets/Teachers/Group 1082.png';
 export default function TeacherPromotion() {
   return (
     <>
-        <div className="teacher-promotion flex gap-10 p-10 flex-wrap justify-center lg:flex-nowrap">
+        <div className="teacher-promotion flex gap-10 p-5 md:p-10 lg:p-24 flex-wrap justify-center lg:flex-nowrap">
             <div className="image bg-mask-group">
                 {/* SVG file */}
                 <div>

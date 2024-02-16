@@ -33,7 +33,7 @@ const blog_data = [
 export default function BlogsPage() {
   return (
     <>
-        <div className="flex flex-col gap-10 p-24" id="blog">
+        <div className="flex flex-col gap-10 p-5 md:p-10 lg:p-24" id="blog">
             <div className="blog-heading flex gap-4 items-baseline">
                 <h1 className="font-pp_pangram_bold text-3xl text-primary">Our blogs</h1>
                 <a href="" className="underline font-nunito text-orange">SHOW ALL</a>

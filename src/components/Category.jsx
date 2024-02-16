@@ -2,11 +2,11 @@ import image1 from '../assets/Categories/img-1.png';
 import image2 from '../assets/Categories/img-2.png';
 import image3 from '../assets/Categories/img-3.png';
 import image4 from '../assets/Categories/img-4.png';
-import image5 from '../assets/Categories/img-5.png';
 import image6 from '../assets/Categories/img-6.png';
 import image7 from '../assets/Categories/img-7.png';
 import image8 from '../assets/Categories/img-8.png';
 import './Styles/Category.css';
+
 const card_data = [{
     src:image1,
     category_name:"Language"
@@ -43,7 +43,7 @@ const card_data = [{
 export default function Category() {
   return (
     <>
-        <div className='p-24' id="category">
+        <div className='p-5 md:p-10 lg:p-24 flex flex-col items-center lg:items-start' id="category">
             <h1 className='font-pp_pangram_bold text-3xl text-primary pl-5 mb-10'>Browse by category</h1>
             <div className="card-container flex gap-4 flex-wrap text-center">
                 {

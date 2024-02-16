@@ -42,12 +42,12 @@ const reason_data = [
 export default function Reasons() {
   return (
     <>
-        <div className='p-24 flex flex-col gap-10' id="reasons">
+        <div className='p-5 md:p-10 lg:p-24 flex flex-col gap-10 items-center lg:items-start' id="reasons">
             <h2 className='font-pp_pangram_bold text-3xl text-primary'>
             Six reasons to choose our class
             </h2>
 
-            <div className="reason-container flex items-center gap-3 flex-wrap">
+            <div className="reason-container flex items-center gap-3 flex-wrap  ">
                 {reason_data.map((item) => (
                     <>
                         <div className="reason-wrapper flex flex-col gap-2 max-w-[300px]" key={item.id}>

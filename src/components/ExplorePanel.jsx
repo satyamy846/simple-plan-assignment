@@ -27,7 +27,7 @@ const explore_data = [{
 export default function ExplorePanel() {
   return (
     <>
-        <div className="flex flex-col gap-8 p-24 items-center text-center" id="explore ">
+        <div className="flex flex-col gap-8 p-5 md:p-10  lg:p-24 items-center text-center" id="explore ">
             <div className="explore-heading flex justify-center items-center max-w-[670px]">
                 <h1 className='font-pp_pangram_bold text-3xl text-primary'>Explore. Enroll. Have Fun. Repeat - here hobby meets happiness</h1>
             </div>

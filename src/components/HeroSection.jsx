@@ -9,10 +9,10 @@ import { FaRegArrowAltCircleRight } from "react-icons/fa";
 export default function HeroSection() {
   return (
     <>
-        <div className='flex items-center justify-center gap-10 text-primary p-24 flex-wrap'>
+        <div className='flex items-center justify-center gap-10 text-primary p-5 md:p-10 lg:p-24 flex-wrap'>
             {/* Hero Section details  */}
             <div className='pl-8 flex flex-col gap-6 max-w-[400px]'>
-                <div className='flex items-center font-pp_pangram_bold text-xl'>
+                <div className='flex items-center font-pp_pangram_bold text-xl flex-wrap'>
                     <h3>Hobbies</h3>
                     <img src={HeartImage} alt="heart-img" className='w-[56px] h-[56px]'/>
                     <h3>Happiness</h3>
@@ -22,13 +22,16 @@ export default function HeroSection() {
                 <div>
                     <p className='font-nunito font-medium'>A Nordic startup which brings incredibly interesting hobbies from around the world to people of all ages.</p>
                 </div>
-                <div className='flex gap-4 items-start flex-1 w-full font-nunito'>
-                    <input type="text" name="" id="" placeholder="Enter your email" className='h-[40px] border rounded-3xl indent-2'/>
-                    <button className=' flex items-center justify-center p-1 gap-1 border rounded-3xl bg-primary text-[#fff] py-2 px-4'>START EXPLORING <FaRegArrowAltCircleRight/></button>
+                <div className='flex gap-4 items-start flex-1 w-full font-nunito relative'>
+                    <input type="email" id='email' placeholder="Enter your email" className='h-[40px] border rounded-3xl indent-2 w-full absolute'/>
+                      <div className="flex justify-between bg-primary text-white items-center h-[40px] px-2 rounded-full absolute right-0 gap-2">
+                          <button className=" flex items-center justify-center gap-1  text-white">START EXPLORING </button>
+                          <FaRegArrowAltCircleRight />
+                      </div>
                 </div>
             </div>
             {/* SVG content  */}
-            <div className='min-w-[690px] min-h-[500px] object-cover overflow-hidden'>
+            <div className=' lg:max-w-[690px] object-cover overflow-hidden'>
                 <img src={VectorImg} alt="vector-img" className='w-full h-full'/>
             </div>
         </div>

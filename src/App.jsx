@@ -23,11 +23,10 @@ function App() {
       <Category/>
       <Reasons/>
       <Community/>
-      {/* Teachers Carousel */}
-      {/* <Teachers/> */}
+      <Teachers/>
       <TeacherPromotion/>
       <BlogsPage/>
-      {/* <Contact/> */}
+      <Contact/>
       <Footer/>
     </>
   )

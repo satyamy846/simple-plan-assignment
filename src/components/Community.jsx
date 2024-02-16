@@ -27,15 +27,15 @@ const community_card = [
 export default function Community() {
   return (
     <>
-        <div className='flex flex-col gap-5 p-24' id="community">
-        <div className=''>
-        <h1 className='font-pp_pangram_bold text-3xl text-primary mb-10 '>Love from community</h1>
+        <div className='flex flex-col gap-5 p-5 md:p-10 lg:p-24 items-center lg:items-start' id="community">
+            <div className=''>
+                <h1 className='font-pp_pangram_bold text-3xl text-primary mb-10 '>Love from community</h1>
 
-        </div>
-            <div className="card-wrapper flex gap-5 text-center justify-between flex-wrap lg:flex-nowrap">
+            </div>
+            <div className="card-wrapper flex gap-5 text-center justify-center items-center lg:justify-between flex-wrap lg:flex-nowrap ">
                 {community_card.map((item) => (
                     <>
-                        <div className={`card border rounded shadow border-[#D3DEEC] p-2 w-[420px] h-[340px] px-4 ${item.center_item ? 'bg-primary' : 'bg-[#fff]'}`}>
+                        <div className={`card border rounded shadow border-[#D3DEEC] p-10 lg:p-2 max-w-[500px] lg:w-[420px] lg:h-[340px] px-4 ${item.center_item ? 'bg-primary' : 'bg-[#fff]'}`}>
                             <div className='image flex justify-center items-center'>
                             <img src={item.image_link} alt="" />
                             </div>

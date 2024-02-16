@@ -31,7 +31,7 @@ export default function Footer() {
         <footer className='bg-lightblue mt-10 px-24 py-10' id='footer'>
             <div className="footer-container flex flex-col gap-5 ">
                 <div className="footer-heading-top flex justify-between gap-2 items-center flex-wrap lg:flex-nowrap">
-                    <div className="contents-wrapper flex gap-10 flex-1">
+                    <div className="contents-wrapper flex gap-10 flex-1 flex-wrap">
                         {content_data.map((data) => (
                             <>
                                 <div className="flex flex-col gap-1 flex-1">
@@ -54,7 +54,7 @@ export default function Footer() {
                 </div>
                 <hr className="bg-lightblue"/>
                 {/* Copyright */}
-                <div className="footer-bottom flex justify-between items-center text-simpleplan_lightblue font-nunito">
+                <div className="footer-bottom flex justify-between items-center text-simpleplan_lightblue font-nunito flex-wrap">
                     
                     <p className="font-light ">© Project 2021. All rights reserved.</p>
                         <p>Made with ❤ by SimplePlan</p>
