@@ -24,9 +24,9 @@ export default function HeroSection() {
                     <p className='font-nunito font-medium'>A Nordic startup which brings incredibly interesting hobbies from around the world to people of all ages.</p>
                 </div>
                 <div className='flex gap-4 items-start flex-1 w-full font-nunito relative z-[1]'>
-                    <input type="email" id='email' placeholder="Enter your email" className='h-[40px] border rounded-3xl indent-2 w-full absolute'/>
-                      <div className="flex justify-between bg-primary text-white items-center h-[40px] px-2 rounded-full absolute right-0 gap-2">
-                          <button className=" flex items-center justify-center gap-1  text-white">START EXPLORING </button>
+                      <input type="email" id='email' placeholder="Enter your email" className='h-[40px] border rounded-3xl indent-2 w-full absolute'/>
+                      <div className="flex justify-between bg-primary text-white items-center h-[40px] pl-2 md:px-2 rounded-full absolute right-0 gap-1 ">
+                          <button className=" flex items-center justify-center gap-1 text-[8px] lg:text-sm text-white">START EXPLORING </button>
                           <FaRegArrowAltCircleRight />
                       </div>
                 </div>
